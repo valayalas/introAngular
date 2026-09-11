@@ -7,5 +7,15 @@ import { Component, signal } from '@angular/core';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('introAngular');
+  title:string="Vale"
+ 
+  duplicarnumero(a:number):number{
+    return a*2
+  }
+ 
+  Pelicula={
+    titulo: "Spider-Man",
+    fechaLanzamiento: new Date(),
+    precio: 235
+  }
 }
