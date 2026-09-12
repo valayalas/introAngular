@@ -1,10 +1,16 @@
 import { Component, signal } from '@angular/core';
-
+ 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.html',
   standalone: false,
-  styleUrl: './app.css'
+  //template:`
+  //<div>
+  //  <h1>{{title}}</h1>
+  //  <app-heroes-list></app-heroes-list>
+  //</div>
+  //`,
+  styleUrl: './app.css',
+  templateUrl: './app.html',
 })
 export class App {
   title:string="Vale"
