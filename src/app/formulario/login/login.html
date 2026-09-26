@@ -1,0 +1,28 @@
+
+<div >
+  <h2>Validación del usuario</h2>
+  <br>
+
+  <div class="mb-3">
+    <label>Usuario: </label>
+    <input type="text" [(ngModel)]="usuarioIngresado" class="ms-2">
+  </div>
+
+  <br>
+
+  <div class="mb-3">
+    <label>Contraseña: </label>
+    <input type="password" [(ngModel)]="contrasenaIngresada" class="ms-2">
+  </div>
+
+  <br>
+
+  <button type="button" (click)="iniciarSesion()" class="btn btn-primary">Iniciar sesión</button>
+  <br><br>
+
+  <p>{{ mensajito }}</p>
+
+  <hr>
+</div>
+
+<br><br><br>

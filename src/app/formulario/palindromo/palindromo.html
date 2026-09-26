@@ -1,0 +1,29 @@
+<div class="col-6">
+    <div class="mb-3">
+        <form action="">
+
+            <br><br>
+
+            <h1>Analizador de Frases</h1>
+
+            <div class="form-group pt-4">
+                <label for="frase" class="form-label">Frase:</label>
+                <input [(ngModel)]="frase" type="text" name="frase" class="form-control" id="frase" placeholder="Ingresa tu frase">
+            </div>
+
+            <br>
+
+            <button (click)="ejercicio()" type="button" class="btn btn-primary">Mostrar</button>
+        </form>
+    </div>
+</div>
+
+<div class="col-6">
+    <br><br>
+    <h2>Resultado:</h2>
+    <p>Vocales: {{ vocales }}</p>
+    <p>TotalVocales: {{ totalVocales }} </p>
+    <p>Consonantes: {{ consonantes }}</p>
+    <p>TotalConsonantes: {{ totalConsonantes }}</p>
+    <p>Es palindromo?: {{ palindromo }}</p> 
+</div>

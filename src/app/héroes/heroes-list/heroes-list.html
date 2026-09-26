@@ -15,13 +15,13 @@
             </div>
             
             <div class="col-md-4">
-                <input type="text" class="form-control" placeholder="Ingresa el nombre de tu heroe">
+                <input [(ngModel)]="listFilter" type="text" class="form-control" placeholder="Ingresa el nombre de tu heroe">
             </div>
         </div>
         
         <div class="row">
             <div class="col-md-6">
-                <h3>Filtro:</h3>
+                <h3>Filtro: {{listFilter}}</h3>
             </div>
         </div>
     </div>
@@ -38,7 +38,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let heroe of heroes">
+                <tr *ngFor="let heroe of heroes | heroesFilter:listFilter">
                     <td><img *ngIf="muestraImagen" [src]="heroe.imagen" [style.width.px]="imageWidth" [style.margin.px]="imageMargin"></td>
                     <td>{{heroe.nombre}}</td>
                     <td>{{heroe.descripcion}}</td>

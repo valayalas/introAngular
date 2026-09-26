@@ -1,0 +1,46 @@
+
+<div class="col-6">
+    <div class="mb-3">
+        <form action="">
+
+            <br><br>
+
+            <h1>Puntos del triángulo</h1>
+            <div class="form-group pt-4">
+                <h5>Punto A</h5>
+                <label><p>X: <input [(ngModel)]="x1" type="number" name="x1" class="form-control" placeholder="Ingresa puntoX"></p></label>
+                <br>
+                <label><p>Y: <input [(ngModel)]="y1" type="number" name="y1" class="form-control" placeholder="Ingresa puntoY"></p></label>
+            </div>
+             <div class="form-group pt-4">
+                <h5>Punto B</h5>
+                <label><p>X: <input [(ngModel)]="x2" type="number" name="x2" class="form-control" placeholder="Ingresa puntoX"></p></label>
+                <br>
+                <label><p>Y: <input [(ngModel)]="y2" type="number" name="y2" class="form-control" placeholder="Ingresa puntoY"></p></label>
+            </div>
+
+            <div class="form-group pt-4">
+                <h5>Punto C </h5>
+                <label><p>X: <input [(ngModel)]="x3" type="number" name="x3" class="form-control" placeholder="Ingresa puntoX"></p></label>
+                <br>
+                <label><p>Y: <input [(ngModel)]="y3" type="number" name="y3" class="form-control" placeholder="Ingresa puntoY"></p></label>
+                <br><br>
+              
+                <p>Punto A: ({{ x1 }}, {{ y1 }})</p>
+                <p>Punto B: ({{ x2 }}, {{ y2 }})</p>
+                <p>Punto C: ({{ x3 }}, {{ y3 }})</p>
+                
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="col-6">
+    <h2>Resultado: {{ resultados }}</h2>
+    <p >Área: {{ area }} unidades cuadradas</p>
+
+    <button (click)="elTriangulo()" type="button" class="btn btn-primary"> Analizar puntos </button>
+
+</div>
+
+<br><br><br>
